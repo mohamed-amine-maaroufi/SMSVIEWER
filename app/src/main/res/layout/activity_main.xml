@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/drawable_search"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="10dp"
+        android:hint="Search"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <ExpandableListView
+        android:id="@+id/messageList"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:layout_weight="0.9"/>
+
+    <LinearLayout
+        android:background="@color/blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:text="Total"/>
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="price"/>
+
+    </LinearLayout>
+
+</LinearLayout>
